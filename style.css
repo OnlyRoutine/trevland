@@ -1,0 +1,333 @@
+body {
+    padding: 0;
+    margin: 0;
+}
+a {
+    text-decoration: none;
+}
+body a:hover {
+    font-weight: bolder;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+h3 {
+    margin: 0;
+}
+.container {
+    width: 100%;
+    max-width: 1180px;
+    padding: 0 20px;
+}
+header, #location, #blog, footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+body button {
+    cursor: pointer;
+    border: none;
+    font-family: 'Roboto', sans-serif;
+    transition: all 0.3s linear;
+}
+body button:hover {
+    background-color: #e7564c;
+}
+.title {
+    text-align: center;
+    font-family: Gelasio;
+    font-weight: 500;
+    font-size: 40px;
+    margin-top: 140px;
+}
+.descr {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    text-align: center;
+    color: #000000;
+    opacity: 0.6;
+    top: 20px;
+}
+
+/* Header */
+
+header {
+    background-image: url("img/Rectangle\ 31.png");
+    height: 900px;
+}
+.promo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 35px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 500;
+}
+.promo__title a {
+    color: white;
+    font-family: 'Ribeye', cursive;
+    font-size: 24px;
+}
+.promo__nav ul, .promo__nav a {
+    color:white;
+    display: flex;
+    margin-left: 50px;
+}
+.promo__btn button {
+    width: 163px;
+    height: 51px;
+    left: 1207px;
+    top: 35px;
+    color: white;
+    background: #C9453B;
+    border-radius: 5px;
+}
+.promo__info h1 {
+    color: white;
+    font-family: 'Gelasio', serif;
+    font-weight: bold;
+    font-size: 65px;
+    line-height: 120%;
+    margin-top: 200px;
+}
+.promo__info p {
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 160%;
+    width: 458px;
+    height: 87px;
+    opacity: 0.6;
+}
+.info__btn button{
+    width: 163px;
+    height: 51px;
+    margin-top: 40px;
+    color: white;
+    background: #C9453B;
+    border-radius: 5px;
+}
+
+/* popular location */
+
+.popular__location {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.location {
+    width: 360px;
+    height: 500px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    border-radius: 10px;
+    transition: all 0.3s linear;
+}
+.location:hover {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.78);
+    border-radius: 10px;
+}
+.location__title {
+    text-align: center;
+    font-family: Gelasio;
+    font-weight: 500;
+    font-size: 24px;
+}
+.location__descr {
+    text-align: center;
+    font-family: Roboto;
+    font-size: 18px;
+    opacity: 0.6;
+}
+
+/* Special Offers */
+
+.offers__content {
+    margin-top: 60px;
+}
+.carousel {
+    display: flex;
+    justify-content: space-between;
+    min-width: 0;
+}
+.carousel__item {
+    font-family: Roboto;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    opacity: 0.9;
+}
+.carousel__item h4 {
+    font-family: Gelasio;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000000;
+}
+.carousel__item a {
+    margin-right: 10px;
+}
+.carousel__item p {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #000000;
+    opacity: 0.6;
+}
+.carousel__item button {
+    margin: 0 10px 0 50px;
+    background-color: transparent;
+}
+.carousel__item button:hover {
+    background-color: transparent;
+}
+
+/* blog news */
+
+.blog__news .container {
+    display: flex;
+    margin-top: 56px;
+}
+.main__news {
+    width: 554px;
+    margin-right: 32px;
+}
+.blog__news h4 {
+    font-family: Gelasio;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+}
+.blog__news p {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 160%;
+    color: #000000;
+    opacity: 0.6;
+}
+.blog__news a {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 150%;
+    color: #000000;
+    opacity: 0.8;
+}
+.select__news {
+    display: flex;
+    margin-bottom: 30px;
+}
+.select__news div {
+    margin-left: 27px;
+}
+
+/* footer */
+
+footer {
+    height: 348px;
+    background: rgba(38, 148, 153, 0.04);
+    margin-top: 140px;
+}
+footer .container {
+    display: flex;
+    align-items: center;
+    height: 100%;
+}
+.footer__container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.contact__form h4 {
+    font-family: Ribeye;
+    font-weight: normal;
+    font-size: 24px;
+    margin: 0;
+}
+.contact__form {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.contact__form div  {
+    display: flex;
+    flex-direction: column;
+}
+.contact__form div a {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    color: black;
+}
+footer .icons {
+    margin-bottom: 22px;
+    display: flex;
+}
+footer .icons li {
+    margin-right: 24px;
+}
+.links__form a {
+    display: flex;
+    flex-direction: column;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 40px;
+    color: #000000;
+}
+.email__place > div > .input__btn {
+    width: 103px;
+    height: 44px;
+    margin-left: 35px;
+    color: white;
+    background: #C9453B;
+    border-radius: 5px;
+    border: none;
+}
+.email__place > div > .input__btn:hover {
+    background-color: #e7564c;
+}
+.email__place input {
+    width: 195px;
+    height: 40px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    color: #000000;
+    transition: all 0.3s linear ;
+}
+.email__place input:hover {
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.103);
+}
+.email__place {
+    display: flex;
+    align-items: center;
+}
+.email__form, .email__form > h4 {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 40px;
+    margin: 0 0 42px 0;
+}
+.email__form h3 {
+    font-family: Roboto;
+    font-weight: 500;
+    font-size: 20px;
+}
