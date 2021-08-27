@@ -16,10 +16,14 @@ ul {
 h3 {
     margin: 0;
 }
+nav img {
+    display: none;
+}
 .container {
     width: 100%;
     max-width: 1180px;
     padding: 0 20px;
+    box-sizing: border-box;
 }
 header, #location, #blog, footer {
     display: flex;
@@ -158,6 +162,7 @@ header {
     display: flex;
     justify-content: space-between;
     min-width: 0;
+    overflow-x: hidden;
 }
 .carousel__item {
     font-family: Roboto;
@@ -330,4 +335,66 @@ footer .icons li {
     font-family: Roboto;
     font-weight: 500;
     font-size: 20px;
+}
+
+/* media */
+@media (max-width: 610px) {
+    .main__news, .main__news img {
+        width: 100%;
+    }
+    header {
+        height: 100vh;
+    }
+    .promo__info h1 {
+        font-size: 35px;
+    }
+}
+@media (max-width: 900px) {
+    nav ul, .promo__nav ul {display: none;}
+    nav img {display: block;}
+    nav:hover ul {display: block;}
+    nav:hover img {display: block;}
+    nav {
+        position: absolute;
+        margin-left: 50%;
+    }
+    nav ul li{
+        position: absolute;
+        margin-top: 20%;
+        margin-left: -150%;
+        
+    }
+    .promo__nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .links__form {
+        display: none;
+    }
+}
+@media (max-width: 1180px) {
+    .popular__location {
+        flex-direction: column;
+        align-items: center;
+    }
+    .location {
+        margin-bottom: 20px;
+    }
+    .blog__news > .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .main__news {
+        margin-right: 0;
+    }
+    .other__news {
+        max-width: 554px;
+        margin-top: 50px;
+    }
+}
+@media (max-width: 1350px) {
+    .carousel__item {
+        margin: 0 5px;
+    }
 }
